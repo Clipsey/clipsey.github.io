@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Box personal portfolio Template</title>
+    <title>Portfolio of Ryan Sabik</title>
     <link rel="icon" href="img/fav.png" type="image/x-icon">
 
     <!-- Bootstrap -->
@@ -17,9 +17,10 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body style="background-color: rgb(255, 255, 255);">
 
     <!-- Preloader -->
+    <!-- Bootstrap, why you do this to me... -->
     <div id="preloader">
         <div class="pre-container">
             <div class="spinner">
@@ -62,6 +63,30 @@
         </nav> -->
         <!-- end nav -->  
     <!-- </div> -->
+
+    <!--  -->
+    <div class="navbar navbar-fixed-top">
+        <div class="container-fluid" style="float: left; overflow: hidden;">
+            <ul class="nav navbar-nav">
+                <li><a href="./SabikResume.pdf">Resume</a></li>
+                <li class="box-social"><a href="#0" style="color: black"><i class="ion-social-github" style="font-size: 20px"></i></a></li>
+                <li class="box-social"><a href="#0" style="color: black"><i class="ion-social-linkedin" style="font-size: 20px;"></i></a></li>
+            </ul>
+        </div>
+        <div class="container-fluid" style="float: right">
+            <ul class="nav navbar-nav">
+                <li><a class="nav-header-link" id="twitch-link" style="color: black;" onclick="highlight('twitch-description')">
+                    Twitch.tv Clone
+                </a></li>
+                <li><a class="nav-header-link" style="color: black" id="global-link" onclick="highlight('global-description')">
+                    GlobalLife
+                </a></li>
+                <li><a class="nav-header-link" style="color: black" id="mult-link" onclick="highlight('mult-description')">
+                    Don't Die Together
+                </a></li>
+            </ul>
+        </div>
+    </div>
     
     <!-- Top bar -->
     <div class="top-bar">
@@ -71,82 +96,212 @@
     <!-- end Top bar -->
     
     <!-- Main container -->
-    <div class="container main-container clearfix"> 
-        <div class="col-md-6">
-            <img src="http://placehold.it/1200x800" class="img-responsive" alt="" />
+    <div class="container main-container clearfix" style="background-color: rgb(255, 255, 255); overflow: hidden;"> 
+        <!-- <div class="col-md-6">
+            <img src="./img/worlds.png" class="img-responsive" alt="" />
+        </div> -->
+        <div class="row" style="padding-left: 25px; padding-right: 25px;">
+            <div class="col-md-12">
+                <!-- <div class="h-10"></div>
+                <ul class="social-ul">
+                    <li class="box-social"><a href="#0"><i class="ion-social-facebook"></i></a></li>
+                    <li class="box-social"><a href="#0"><i class="ion-social-instagram-outline"></i></a></li>
+                    <li class="box-social"><a href="#0"><i class="ion-social-twitter"></i></a></li>
+                    <li class="box-social"><a href="#0"><i class="ion-social-dribbble"></i></a></li>
+                </ul> -->
+                <h3 class="uppercase" style="text-align: center">All About Me</h3>
+                <h5 style="text-align: center">The Software Engineer</h5>
+                <br>
+                <p> Hi. I'm Ryan Sabik. I have a Computeer Engineering degree from the University of California - Riverside.
+                    I've been employed for an Army research base, then called TARDEC, as a Computer Engineer on the Robotics Engineering
+                    Team, where I wrote Python code for various tasks, like automating controller interactions with the robotic platform
+                    by spoofing JAUS traffic observed over Wireshark.
+                </p>
+                <p> After, I worked as an Embedded Software Engineer for General Motors on the Voice Recognition and Voice assistant
+                    teams, where I wrote C++ and Java code on the Android Platform. I also wrote automation frameworks in Python and
+                    Bash Scripts to create artificial voice input and touch interactions with the infotainment system.
+                </p>
+                <p> Most recently, I've been sharpening my FullStack Web Development skills, where I've been building projects in React,
+                    Redux, Node.js / Express, Ruby on Rails, using MongoDB, PostgreSQL, WebSockets (socket.io), D3.js, Three.js, and
+                    Webpack.
+                </p>
+    
+                <div class="h-10"></div>
+                <ul class="social-ul">
+                    <li class="box-social"><a href="#0"><i class="ion-social-github"></i></a></li>
+                    <li class="box-social"><a href="#0"><i class="ion-social-linkedin"></i></a></li>
+                </ul>
+                
+            </div>
         </div>
-        <div class="col-md-6">
-            <div class="h-10"></div>
-            <ul class="social-ul">
-                <li class="box-social"><a href="#0"><i class="ion-social-facebook"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-instagram-outline"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-twitter"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-dribbble"></i></a></li>
-            </ul>
-            <h3 class="uppercase">All About Me</h3>
-            <h5>The Software Engineer</h5>
-            <br>
-            <p> Hi. I'm Ryan Sabik. I have a Computeer Engineering degree from the University of California - Riverside.
-                I've been employed for an Army research base, then called TARDEC, as a Computer Engineer on the Robotics Engineering
-                Team, where I wrote Python code for various tasks, like automating controller interactions with the robotic platform
-                by spoofing JAUS traffic observed over Wireshark.
-            </p>
-            
+
+        <hr class="col-md-12" style="color: black;">
+
+        <div class="row" style="padding: 0px 25px; box-sizing: border-box;" id="twitch-description">
+            <div class="col-md-6">
+                <img src="img/twitch.png" class="img-responsive" alt="" />
+            </div>
+            <div class="col-md-6">
+                <h3 class="uppercase">Twitch.tv Clone </h3>
+                <h5 style="color: #7562bb"> A clone of twitch.tv, with full live streaming capability</h5>
+                <div class="h-30"></div>
+                <p>
+                    Built using React / Redux and Ruby on Rails with PostgreSQL database, through ActiveRecord.
+                    Configured a Centos/Linux Digital Ocean server to accept RTMP streams, and accept HTTP GET requests.
+                    Used the HLS.js library to display a video feed corresponding with the user's index file, from the user's RTMP stream.
+                </p>
+                <p>
+                    Utilized AWS and S3 cloud services, with Rails ActiveStorage, for hosting user profile and streaming category pictures.
+                </p>
+                <p>
+                    Implemented a responsive layout, by leveraging Flexbox and the React-Redux life-cycle in order to re-render and dynamically resize key React Components.
+                </p>
+    
+                <div class="h-10"></div>
+                <ul class="social-ul">
+                    <li class="box-social"><a href="#0"><i class="ion-social-github"></i></a></li>
+                </ul>
+            </div>
         </div>
-        <div class="col-md-12">
-           <div class="h-30"></div>
-            
-            <p> After, I worked as an Embedded Software Engineer for General Motors on the Voice Recognition and Voice assistant teams, where I wrote C++ and Java code on the Android Platform. I also wrote automation frameworks in Python and Bash Scripts to create artificial voice input and touch interactions with the infotainment system.
-            </p>
-            <p> Most recently, I've been sharpening my FullStack Web Development skills, where I've been building projects in React, Redux, Node.js / Express, Ruby on Rails, using MongoDB, PostgreSQL, WebSockets (socket.io), D3.js, Three.js, and Webpack.
-            </p>
 
-            <br>
-            
-        </div>
+        <hr class="row" style=" height: 3px; color: black"></hr>
 
-        <br />
-
-        <div class="col-md-6">
-            <h3 class="uppercase">About Me </h3>
-            <h5>Creative & Lorem ipsum dolor sit amet</h5>
-            <div class="h-30"></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliter enim nosmet ipsos nosse non possumus. Inscite
-                autem medicinae et gubernationis ultimum cum ultimo sapientiae comparatur. Tecum optime, deinde etiam cum
-                mediocri amico. Et nemo nimium beatus est; Ac ne plura complectar-sunt enim innumerabilia-, bene laudata virtus
-                voluptatis aditus </p>
+        <div class="row" style="padding: 0px 25px; box-sizing: border-box;" id="global-description">
+            <div class="col-md-6" style="float: right;">
+                <img src="img/worlds.png" class="img-responsive" alt="" />
+            </div>
+            <div class="col-md-6" style=" float: left;">
+                <h3 class="uppercase">Global Life </h3>
+                <h5 style="color: rgb(133, 133, 133)">Data Visualization of Countries</h5>
+                <div class="h-30"></div>
+                <p>
+                    Navigable globe using Three.js, where data about each country is displayed using D3.js.
+                </p>
+                <p>
+                    Upon hovering over each country, an additional 'texture' layer (represented as a canvas where the path of the stroke is the outline of the country) is rendered. Note: Higher amounts of segments lead to more processing power required, but more accurate outlines.
+                </p>
+                <p>
+                    Upon clicking a country, data from the World Happiness Index of 2019 is displayed in the top left as a bar chart, representing the country's rating relative to the other 156 countries in categories such as Corruption, Negative Affect, and Life Expectancy of their respective citizens. Additional data pulled from multiple sources.
+                </p>
         
-            <p>Tum ille: Tu autem cum ipse tantum librorum habeas, quos hic tandem requiris? Esse enim quam vellet iniquus
-                iustus poterat inpune. </p>
-            <div class="h-10"></div>
-            <ul class="social-ul">
-                <li class="box-social"><a href="#0"><i class="ion-social-facebook"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-instagram-outline"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-twitter"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-dribbble"></i></a></li>
-            </ul>
-        </div>
-        <div class="col-md-6">
-            <img src="http://placehold.it/1200x800" class="img-responsive" alt="" />
+                <div class="h-10"></div>
+                <ul class="social-ul">
+                    <li class="box-social"><a href="#0"><i class="ion-social-github"></i></a></li>
+                </ul>
+            </div>
         </div>
 
+        <hr class="row" style=" height: 3px; color: black">
 
+        <div class="row" style="padding: 0px 25px; box-sizing: border-box;" id="mult-description">
+            <div class="col-md-6" style="float: left;">
+                <img src="img/zombie.png" class="img-responsive" alt="" />
+            </div>
+            <div class="col-md-6" style=" float: right;">
+                <h3 class="uppercase">Don't Die Together </h3>
+                <h5 style="color: rgb(173, 59, 78)">Multiplayer Zombie Survival Game</h5>
+                <div class="h-30"></div>
+                <p>
+                    Group Project: Built using React/Redux, Node.js/Express, and WebSockets.
+                </p>
+                <p>
+                    Responsibilty: backend, and responsive design of frontend. MERN stack project, the backend is built using Node.js/Express and MongoDB with Mongoose for user authentication. 
+                    Multiplayer connection is facilitated through WebSockets using Socket.io and socket.io-client library.
+                </p>
+                <p>
+                    Implemented a responsive layout, by leveraging Flexbox and the React-Redux life-cycle in order to re-render and
+                    dynamically resize key React Components.
+                </p>
+            
+                <div class="h-10"></div>
+                <ul class="social-ul">
+                    <li class="box-social"><a href="#0"><i class="ion-social-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="row" style=" height: 3px; color: black">
+        <!-- <div class="col-md-12"></div> -->
+        </hr>
+        
+        <div class="col-md-12"></div>
         
     </div>
     <!-- end Main container -->
 
 
     <!-- footer -->
-    <footer>
+    <!-- <footer>
         <div class="container-fluid">
-            <p class="copyright">© Box Portfolio 2016</p>
+            <p class="copyright">Portfolio Icons</p>
         </div>
-    </footer>
+    </footer> -->
     <!-- end footer -->
     
     <!-- back to top -->
-    <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
+    <!-- <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a> -->
     <!-- end back to top -->
+
+    <script>
+        const scrollListener = document.addEventListener('scroll', () => {
+
+            const twitchDescription = document.getElementById('twitch-description');
+            const multDescription = document.getElementById('mult-description');
+            const globalDescription = document.getElementById('global-description');
+
+            const bottomPosition = window.scrollY + window.innerHeight;
+            const correction = window.innerWidth;
+
+            // console.log(multDescription.getBoundingClientRect().bottom);
+            // console.log(window.innerHeight);
+
+
+            if (twitchDescription.getBoundingClientRect().bottom < window.innerHeight && 
+                twitchDescription.getBoundingClientRect().top > 50) {
+                const twitchLink = document.getElementById('twitch-link');
+                twitchLink.style.color = '#7562bb';
+            } else {
+                const twitchLink = document.getElementById('twitch-link');
+                twitchLink.style.color = '#000';
+            }
+            if (multDescription.getBoundingClientRect().bottom < window.innerHeight &&
+                multDescription.getBoundingClientRect().top > 50) {
+                const multLink = document.getElementById('mult-link');
+                multLink.style.color = 'rgb(173, 59, 78)';
+            } else {
+                const multLink = document.getElementById('mult-link');
+                multLink.style.color = '#000';
+            }
+            if (globalDescription.getBoundingClientRect().bottom < window.innerHeight &&
+                globalDescription.getBoundingClientRect().top > 50) {
+                const globalLink = document.getElementById('global-link');
+                globalLink.style.color = 'rgb(133, 133, 133)';
+            } else {
+                const globalLink = document.getElementById('global-link');
+                globalLink.style.color = '#000';
+            }
+            
+        })
+        window.highlight = (id) => {
+            if (id === 'twitch-description') {
+                console.log('twitch color');
+                const twitchLink = document.getElementById('twitch-link');
+                twitchLink.style.color = '#7562bb';
+            } else if (id === 'global-description') {
+                console.log('global color')
+                const globalLink = document.getElementById('global-link');
+                globalLink.style.color = 'rgb(133, 133, 133)';
+            } else if (id === 'mult-description') {
+                console.log('mult color');
+                const multLink = document.getElementById('mult-link');
+                multLink.style.color = 'rgb(173, 59, 78)';
+            }
+
+            document.getElementById(id).scrollIntoView(false);
+            window.scrollTo(0, window.scrollY + 50);
+
+        }
+    </script>
 
 </body>
 

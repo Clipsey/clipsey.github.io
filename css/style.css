@@ -37,7 +37,11 @@ body {
     height: 100%;
     font-family: 'Poppins', sans-serif;
     line-height: 1.8;
-    color: #999
+    color: #666;
+}
+
+body {
+    padding-top: 50px;
 }
 
 .no-padding {
@@ -51,7 +55,9 @@ body {
 }
 
 .main-container {
-    padding: 100px 0;
+    padding: 25px 0px;
+    /* border-right: solid 3px rgb(233, 233, 233);  */
+    /* border-left: solid 3px rgb(231, 231, 231);  */
 }
 
 .center {
@@ -80,6 +86,23 @@ a {
     font-size: 11px;
 }
 
+.navbar {
+    background-color: rgb(255, 255, 255);
+    height: 5px;
+    padding: 0px;
+}
+.nav li {
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+    /* body { padding-top: 100px; } */
+}
+
+.nav-header-link {
+    cursor: pointer;
+}
+
 
 /* typography
 ==================================================*/
@@ -95,7 +118,7 @@ h3 {
 }
 
 h5 {
-    color: #ffbf00;
+    color: #c56588;
 }
 
 
@@ -154,7 +177,7 @@ h5 {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: #ffbf00;
+    background-color: rgb(173, 59, 78);/* #ffbf00; */
     opacity: 0.6;
     position: absolute;
     top: 0;
@@ -906,10 +929,10 @@ footer img {
 ==================================================*/
 
 .top-bar {
-    color: #333;
+    /* color: #333; */
     padding: 150px 0 150px;
-    background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/01.jpg);
-    background: linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/01.jpg);
+    background: -webkit-linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1.0)), url(../img/banner2.jpg);
+    background: linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1.0)), url(../img/banner2.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -920,7 +943,7 @@ footer img {
     font-size: 60px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #999;
+    color: #555;
     line-height: 50px;
 }
 
@@ -928,16 +951,16 @@ footer img {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 500;
-    color: #777;
+    color: #666;
 }
 
 .top-bar p a {
-    color: #777;
+    color: #666;
 }
 
 .top-bar p a:hover,
 .top-bar p a:focus {
-    color: #555;
+    color: #666;
     text-decoration: none;
 }
 
@@ -1126,6 +1149,10 @@ textarea:focus {
 
 /* Responsive media queries
 ==================================================*/
+
+.col-md-12 {
+    margin-bottom: 25px;
+}
 
 @media (max-width: 991px) {
     .portfolio .categories-grid span {
