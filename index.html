@@ -69,8 +69,8 @@
         <div class="container-fluid" style="float: left; overflow: hidden;">
             <ul class="nav navbar-nav">
                 <li><a href="./SabikResume.pdf">Resume</a></li>
-                <li class="box-social"><a href="#0" style="color: black"><i class="ion-social-github" style="font-size: 20px"></i></a></li>
-                <li class="box-social"><a href="#0" style="color: black"><i class="ion-social-linkedin" style="font-size: 20px;"></i></a></li>
+                <li class="box-social"><a href="https://github.com/Clipsey/" style="color: black"><i class="ion-social-github" style="font-size: 20px"></i></a></li>
+                <li class="box-social"><a href="https://www.linkedin.com/in/ryan-sabik-4bab01194/" style="color: black"><i class="ion-social-linkedin" style="font-size: 20px;"></i></a></li>
             </ul>
         </div>
         <div class="container-fluid" style="float: right">
@@ -109,27 +109,45 @@
                     <li class="box-social"><a href="#0"><i class="ion-social-twitter"></i></a></li>
                     <li class="box-social"><a href="#0"><i class="ion-social-dribbble"></i></a></li>
                 </ul> -->
-                <h3 class="uppercase" style="text-align: center">All About Me</h3>
-                <h5 style="text-align: center">The Software Engineer</h5>
+                <div>
+                    <h3 class="uppercase" style="text-align: center">All About Me</h3>
+                    <h5 style="text-align: center">The Software Engineer</h5>
+                </div>
+
+                <div class="history_images">
+                    
+                </div>
                 <br>
-                <p> Hi. I'm Ryan Sabik. I have a Computeer Engineering degree from the University of California - Riverside.
-                    I've been employed for an Army research base, then called TARDEC, as a Computer Engineer on the Robotics Engineering
-                    Team, where I wrote Python code for various tasks, like automating controller interactions with the robotic platform
+                
+                <p> Hi. I'm Ryan Sabik. I have a <b>Computeer Engineering degree from the University of California - Riverside.</b>
+                    
+                <p>
+                    I've been employed for an Army research base, then called <b>TARDEC, as a Computer Engineer on the Robotics Engineering Team</b>, 
+                    where I wrote Python code for various tasks, like automating controller interactions with the robotic platform
                     by spoofing JAUS traffic observed over Wireshark.
+                </p> 
                 </p>
-                <p> After, I worked as an Embedded Software Engineer for General Motors on the Voice Recognition and Voice assistant
-                    teams, where I wrote C++ and Java code on the Android Platform. I also wrote automation frameworks in Python and
+                <p> After, I worked as an <b>Embedded Software Engineer for General Motors on the Voice Recognition and Voice assistant
+                    teams</b>, where I wrote C++ and Java code on the Android Platform. I also wrote automation frameworks in Python and
                     Bash Scripts to create artificial voice input and touch interactions with the infotainment system.
                 </p>
-                <p> Most recently, I've been sharpening my FullStack Web Development skills, where I've been building projects in React,
+                <p> Most recently, I've been sharpening my <b>FullStack Web Development</b> skills, where I've been building projects in React,
                     Redux, Node.js / Express, Ruby on Rails, using MongoDB, PostgreSQL, WebSockets (socket.io), D3.js, Three.js, and
                     Webpack.
                 </p>
+
     
                 <div class="h-10"></div>
-                <ul class="social-ul">
-                    <li class="box-social"><a href="#0"><i class="ion-social-github"></i></a></li>
-                    <li class="box-social"><a href="#0"><i class="ion-social-linkedin"></i></a></li>
+                <ul class="social-ul history_images" style="display: flex">
+                    <div>
+                        <a href="https://en.wikipedia.org/wiki/General_Motors">
+                            <img src="./img/200px-General_Motors_logo.svg.png" style="height: 30px; margin-right: 25px">
+                        </a>
+                        <a href="https://en.wikipedia.org/wiki/United_States_Army_CCDC_Ground_Vehicle_Systems_Center">
+                            <img src="./img/GVSC_Logo.png" style="height: 30px;">
+                        </a>
+                    </div>
+                    
                 </ul>
                 
             </div>
@@ -158,8 +176,9 @@
                 </p>
     
                 <div class="h-10"></div>
-                <ul class="social-ul">
-                    <li class="box-social"><a href="#0"><i class="ion-social-github"></i></a></li>
+                <ul class="social-ul" style="display: flex; flex-direction: row;">
+                    <li class="box-social"><a href="https://github.com/Clipsey/streamTv"><i class="ion-social-github"></i></a></li>
+                    <div style="line-height: 40px; margin-left: 20px;"><a href="https://twitch-copy.herokuapp.com/#/">Live Link</a></div>
                 </ul>
             </div>
         </div>
@@ -185,8 +204,9 @@
                 </p>
         
                 <div class="h-10"></div>
-                <ul class="social-ul">
-                    <li class="box-social"><a href="#0"><i class="ion-social-github"></i></a></li>
+                <ul class="social-ul" style="display: flex; flex-direction: row;">
+                    <li class="box-social"><a href="https://github.com/Clipsey/GlobalLife"><i class="ion-social-github"></i></a></li>
+                    <div style="line-height: 40px; margin-left: 20px;"><a href="https://clipsey.github.io/GlobalLife/">Live Link</a></div>
                 </ul>
             </div>
         </div>
@@ -214,8 +234,9 @@
                 </p>
             
                 <div class="h-10"></div>
-                <ul class="social-ul">
-                    <li class="box-social"><a href="#0"><i class="ion-social-github"></i></a></li>
+                <ul class="social-ul" style="display: flex; flex-direction: row;">
+                    <li class="box-social"><a href="https://github.com/nairieberry/dont-die-together"><i class="ion-social-github"></i></a></li>
+                    <div style="line-height: 40px; margin-left: 20px;"><a href="https://dont-die-together.herokuapp.com/">Live Link</a></div>
                 </ul>
             </div>
         </div>
@@ -243,6 +264,7 @@
     <!-- end back to top -->
 
     <script>
+        window.setTimeout(() => document.getElementById('preloader').style['z-index'] = 0, 2000);
         const scrollListener = document.addEventListener('scroll', () => {
 
             const twitchDescription = document.getElementById('twitch-description');
@@ -251,10 +273,6 @@
 
             const bottomPosition = window.scrollY + window.innerHeight;
             const correction = window.innerWidth;
-
-            // console.log(multDescription.getBoundingClientRect().bottom);
-            // console.log(window.innerHeight);
-
 
             if (twitchDescription.getBoundingClientRect().bottom < window.innerHeight && 
                 twitchDescription.getBoundingClientRect().top > 50) {
@@ -299,7 +317,6 @@
 
             document.getElementById(id).scrollIntoView(false);
             window.scrollTo(0, window.scrollY + 50);
-
         }
     </script>
 
