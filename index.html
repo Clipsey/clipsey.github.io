@@ -274,36 +274,34 @@
             const bottomPosition = window.scrollY + window.innerHeight;
             const correction = window.innerWidth;
 
-            const highLightOffset = window.innerHeight / 6;
+            const highLightOffset = 0;
 
-            console.log(window.innerWidth);
+            const setColor = (link, color) => {
+                const element = document.getElementById(link);
+                element.style.color = color;
+            }
 
             if (twitchDescription.getBoundingClientRect().top < window.innerHeight - highLightOffset && 
                 twitchDescription.getBoundingClientRect().top > highLightOffset) {
-                const twitchLink = document.getElementById('twitch-link');
-                twitchLink.style.color = '#7562bb';
+                setColor('twitch-link', '#7562bb');
             } else {
-                const twitchLink = document.getElementById('twitch-link');
-                twitchLink.style.color = '#000';
+                setColor('twitch-link', '#000');
             }
             if (multDescription.getBoundingClientRect().top < window.innerHeight - highLightOffset &&
                 multDescription.getBoundingClientRect().top > highLightOffset) {
-                const multLink = document.getElementById('mult-link');
-                multLink.style.color = 'rgb(173, 59, 78)';
+                setColor('mult-link', 'rgb(173, 59, 78)');
             } else {
-                const multLink = document.getElementById('mult-link');
-                multLink.style.color = '#000';
+                setColor('mult-link', '#000');
             }
             if (globalDescription.getBoundingClientRect().top < window.innerHeight - highLightOffset &&
                 globalDescription.getBoundingClientRect().top > highLightOffset) {
-                const globalLink = document.getElementById('global-link');
-                globalLink.style.color = 'rgb(133, 133, 133)';
+                setColor('global-link', 'rgb(133, 133, 133)')
             } else {
-                const globalLink = document.getElementById('global-link');
-                globalLink.style.color = '#000';
+                setColor('global-link', '#000')
             }
             
         })
+
         window.highlight = (id) => {
             if (id === 'twitch-description') {
                 const twitchLink = document.getElementById('twitch-link');
@@ -315,9 +313,9 @@
                 const multLink = document.getElementById('mult-link');
                 multLink.style.color = 'rgb(173, 59, 78)';
             }
+
             const element = document.getElementById(id);
             if (window.innerWidth > 990 && id === 'mult-description') {
-                console.log('special')
                 element.scrollIntoView(false);
                 window.scrollTo(0, window.scrollY + 250);
             } else {
