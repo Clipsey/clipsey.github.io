@@ -1,0 +1,115 @@
+{
+  "basics": {
+    "name": "Ryan Sabik",
+    "label": "Software Engineer",
+    "picture": "",
+    "email": "sabik.ryan@gmail.com",
+    "phone": "(925) 978-6818",
+    "website": "http://ryansabik.com",
+    "summary": "Hey, I'm Ryan Sabik. I'm a software engineer, a sports fanatic, a pizza fan, and a hacker news addict. Professionally, I've developed with C++, Java, Python, TypeScript and JavaScript, and used tools / frameworks / libraries such as ROS, Android, WireShark, GraphQL, REST, React, Express, Node.js, and BOOST and POCO. I've been a Robotics software engineer, an Android and Linux Systems Developer, a frontend, backend, and full stack developer. Non-professionally (Unprofessionally?) I've used languages like Rust and Golang, and I've used both Unity and the Unreal Engine.",
+    "location": {
+      "address": "",
+      "city": "San Francisco",
+      "region": "California"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "ryan-s-4bab01194",
+        "url": "https://www.linkedin.com/in/ryan-s-4bab01194/"
+      },
+      {
+        "network": "github",
+        "username": "Clipsey",
+        "url": "https://github.com/Clipsey"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Nabis",
+      "position": "Software Engineer",
+      "highlights": [
+        "Frontend and Backend development of web application using TypeScript in React and Express.",
+        "Introduced microservice architecture, scaling PDF generation and dynamically creating and storing manifest files using AWS Lambda and S3.",
+        "PostgreSQL migrations and database edits to capture more customer data."
+      ]
+    },
+    {
+      "company": "General Motors",
+      "position": "Systems Software Engineer",
+      "startDate": "2018-05-01",
+      "endDate": "2017-06-15",
+      "highlights": [
+        "On the Voice Recognition and Voice Assistant teams using C++ and Java on the infotainment Linux and Android system",
+        "Developed low-level multi-threaded code communicating over sockets with voice recognition cloud software",
+        "Optimized algorithms leading to more responsive voice interface and faster processing of voice commands"
+      ]
+    },
+    {
+      "company": "US Army (Tank Automotive Research, Design, Engineering Center)",
+      "position": "Software Engineer",
+      "startDate": "2017-06-01",
+      "endDate": "2018-05-01",
+      "highlights": [
+        "Robotics software engineer at the SEC (Software Engineering Center) at TARDEC, a research arm of the US Army",
+        "Developed software for use by robotic platforms with multiple languages, including C++, Python, JavaScript, C",
+        "Developed robotics controller software as a web application, communicating over JAUS, a military standard protocol, using C++ and JavaScript",
+        "Developed robotic testing platform using Python, automating controller interactions, and robotic platform (CPU, RAM, etc) monitoring."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of California, Riverside",
+      "area": "Computer Engineering",
+      "studyType": "Bachelor of Science",
+      "startDate": "2011-06-01",
+      "endDate": "2015-06-01"
+    }
+  ],
+  "awards": [
+    {
+      "title": "MTRS-INC-II Robotics Project",
+      "date": "2018-06-01",
+      "awarder": "US Army (TARDEC)",
+      "summary": "In support of, and in saving the lives of, US Army soldiers."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywords": ["Python", "C++", "JavaScript", "TypeScript", "Java", "Ruby"]
+    },
+    {
+      "name": "Paradigms",
+      "keywords": [
+        "Frontend",
+        "Backend",
+        "Full Stack",
+        "Android",
+        "API",
+        "Systems Development",
+        "REST",
+        "GraphQL",
+        "Microservice"
+      ]
+    },
+    {
+      "name": "Tools",
+      "keywords": [
+        "Linux",
+        "Node.js",
+        "Express",
+        "React",
+        "Ruby on Rails",
+        "Concurrency",
+        "Multi-threaded",
+        "AWS",
+        "Lambda",
+        "EC2",
+        "S3"
+      ]
+    }
+  ]
+}
