@@ -5,12 +5,13 @@
   "main": "index.js",
   "dependencies": {
     "jsonresume-theme-onepage": "0.0.3",
+    "jsonresume-theme-stackoverflow": "^1.4.0",
     "resume-cli": "^1.2.7"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-resume-html": "resume export resume.html --theme stackoverflow"
+    "build-resume-html": "resume export index.html --theme stackoverflow"
   },
   "repository": {
     "type": "git",
