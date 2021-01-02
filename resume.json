@@ -15,8 +15,8 @@
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "ryan-s-4bab01194",
-        "url": "https://www.linkedin.com/in/ryan-s-4bab01194/"
+        "username": "ryan-sabik-4bab01194",
+        "url": "https://www.linkedin.com/in/ryan-sabik-4bab01194/"
       },
       {
         "network": "github",
@@ -80,7 +80,7 @@
   "skills": [
     {
       "name": "Languages",
-      "keywords": ["Python", "C++", "JavaScript", "TypeScript", "Java", "Ruby"]
+      "keywords": [ "Python", "C++", "JavaScript", "TypeScript", "Java", "Ruby" ]
     },
     {
       "name": "Paradigms",
